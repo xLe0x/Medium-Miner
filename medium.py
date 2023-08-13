@@ -1,23 +1,31 @@
-from functions import getResults,listBlogs,checkUserInput,checkForDir
-from external import bcolors
-
-
-
-
-author = input(
-    f"{bcolors.BOLD}Enter The author name https://medium.com/feed/@NAME_HERE: {bcolors.ENDC}"
+from functions import (
+    searchGoogle,
+    AuthorMedium,
 )
+from external import bcolors
+import argparse
 
 try:
-    data = getResults(author)
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-w",
+        "--word",
+        help="Search by word in google example: python3 medium.py -w xss",
+    )
+    parser.add_argument(
+        "-a",
+        "--author",
+        help="Search by author in medium example: python3 medium.py -a ammarmosaber",
+    )
+    args = parser.parse_args()
 
-    listBlogs(data)
+    if args.word:
+        searchGoogle(str(args.word))
 
-    checkForDir(author)
+    if args.author:
+        AuthorMedium(str(args.author))
 
-    checkUserInput(data)
-    
-except NameError:
+except ValueError:
     print(f"{bcolors.FAIL}Username is wrong or there is no blogs!{bcolors.ENDC}")
-except:
-    print(f"{bcolors.FAIL}Something went wrong please try again!{bcolors.ENDC}")
+# except:
+#     print(f"{bcolors.FAIL}Something went wrong please try again!{bcolors.ENDC}")

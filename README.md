@@ -2,7 +2,7 @@
 
 > A Medium Scraper That You Need!
 
-<img src="https://raw.githubusercontent.com/xLe0x/Medium-Miner/main/assets/imgs/logo.png" />
+<img src="https://raw.githubusercontent.com/xLe0x/Medium-Miner/main/assets/imgs/medium.jpg" />
 
 
 ## 🚩 Table of Contents

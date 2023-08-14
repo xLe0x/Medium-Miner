@@ -49,4 +49,6 @@ python3 medium.py -a ammarmosaber
 
 ### Preview
 
+https://github.com/xLe0x/Medium-Miner/assets/112324284/fe885e86-d69a-4369-9b63-3ab861d3ffd7
+
 This program is licensed under the [MIT](https://github.com/xLe0x/Medium-Miner/blob/main/LICENSE.txt) © [xLe0x](https://github.com/xle0x).

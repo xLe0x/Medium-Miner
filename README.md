@@ -11,4 +11,4 @@
 
 
 
-This software is licensed under the [MIT](https://github.com/xLe0x/Medium-Miner/LICENSE.txt) © [xLe0x](https://github.com/xle0x).
+This software is licensed under the [MIT](https://github.com/xLe0x/Medium-Miner/blob/main/LICENSE.txt) © [xLe0x](https://github.com/xle0x).

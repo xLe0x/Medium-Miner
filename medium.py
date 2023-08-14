@@ -37,7 +37,7 @@ try:
     if args.word:
         if not args.count:
             args.count = 10
-            searchGoogle(str(args.word), args.count)
+        searchGoogle(str(args.word), args.count)
 
     elif args.author:
         SearchAuthorMedium(args.author)

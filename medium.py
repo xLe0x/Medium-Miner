@@ -3,7 +3,7 @@ from functions import (
     SearchAuthorMedium,
 )
 from external import bcolors
-import argparse
+import argparse,sys
 
 
 parser = argparse.ArgumentParser(description="Medium Miner.")
@@ -30,6 +30,8 @@ parser.add_argument(
     help="Search by author in medium example: python3 medium.py -a ammarmosaber",
 )
 
+parser.add_argument("-v", action="store_true", help="Prints the program version")
+
 args = parser.parse_args()
 
 
@@ -41,6 +43,9 @@ try:
 
     elif args.author:
         SearchAuthorMedium(args.author)
+
+    elif args.v:
+        print("1.0 Beta")
 
     else:
         print()
